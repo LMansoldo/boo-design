@@ -1,0 +1,19 @@
+@use './utils' as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		line-height: 1;
+	}
+
+	h1 {
+		font-family: $amplitudeWideRegular;
+		font-size: rem(35);
+		line-height: 1;
+	}
+}
+
+@layer components {}
