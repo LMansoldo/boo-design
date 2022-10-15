@@ -26,6 +26,21 @@ module.exports = {
 				additional: colors.gray,
 				background: colors.white,
 				visuals: colors.cyan,
+				error: colors.red,
+			},
+			keyframes: {
+				pulseborder: {
+					'0%, 100%': { 'border-color': colors.cyan[300] },
+					'50%': { 'border-color': colors.blue[500] },
+				},
+				pulseerror: {
+					'0%, 100%': { 'border-color': colors.red[300] },
+					'50%': { 'border-color': colors.rose[600] },
+				},
+			},
+			animation: {
+				pulseborder: 'pulseborder 1.5s linear infinite',
+				pulseerror: 'pulseerror 1.6s linear infinite'
 			},
 		},
 	},

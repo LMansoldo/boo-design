@@ -47,7 +47,7 @@
 		@apply inline-flex justify-center border border-solid border-transparent items-center leading-none px-6 py-1.5 duration-300;
 		line-height: 1rem;
 		min-height: 2.5rem;
-		border-width: 3px;
+		border-width: 2px;
 
 		&.small {
 			@apply min-h-[2rem] min-w-[3rem] text-xs;
@@ -76,7 +76,7 @@
 
 		&:hover {
 			@apply border border-solid border-visuals-500 duration-300 animate-pulseborder;
-			border-width: 3px;
+			border-width: 2px;
 		}
 
 		&.primary {
