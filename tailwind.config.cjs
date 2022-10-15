@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors.js')
+
 module.exports = {
 	// mode: 'jit',
 	content: ['./src/**/*.scss', './src/**/*.svelte'],
@@ -6,17 +8,13 @@ module.exports = {
 		extend: {
 			keyframes: {
 				pulseborder: {
-				  '0%, 100%': {
-					opacity: .9
-				  },
-				  '50%': {
-					opacity: .5
-				  },
-				}
-			  },
+					'0%, 100%': { 'border-color': colors.cyan[300] },
+					'50%': { 'border-color': colors.blue[500] },
+				},
+			},
 			animation: {
-				'pulseborder': 'pulseborder 2s linear infinite',
-			  }
+				pulseborder: 'pulseborder 1.5s linear infinite',
+			},
 		},
 	},
 	variants: {

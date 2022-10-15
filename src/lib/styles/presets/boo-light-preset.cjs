@@ -25,7 +25,7 @@ module.exports = {
 				secondary: colors.slate,
 				additional: colors.gray,
 				background: colors.white,
-				visuals: colors.cyan
+				visuals: colors.cyan,
 			},
 		},
 	},
