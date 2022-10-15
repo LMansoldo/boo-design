@@ -37,3 +37,15 @@
         error: "Error message"
 	}}
 />
+
+<Story
+	name="Default w/ Icon"
+	args={{
+		id: "default",
+        label: "default",
+		name: "default",
+        type: "text",
+        placeholder: "default",
+        icon: "icon icon-fine-search fine-search"
+	}}
+/>
