@@ -3,9 +3,9 @@
     export let label: string | undefined = undefined
 </script>
 
-<li class="w-full border-solid py-1 px-2 border-[3px] border-transparent hover:animate-pulseborder cursor-pointer" on:click>
+<li class="w-full flex items-center border-solid  px-2 border-[3px] border-transparent hover:animate-pulseborder cursor-pointer" on:click>
     <span class={icon} />
-    <span class="px-2 text-sm">
+    <span class="px-2 py-1 text-sm">
         {label || ""}
     </span>
 </li>
