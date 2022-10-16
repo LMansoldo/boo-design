@@ -22,7 +22,7 @@
 
 <style lang="scss">
 	.menubar {
-		@apply flex flex-row items-center shadow-sm shadow-slate-700/50 justify-center md:justify-between bg-secondary-50 min-h-[4.375rem] drop-shadow-sm px-5 relative left-0 right-0;
+		@apply flex flex-row items-center justify-center md:justify-between bg-secondary-50 min-h-[4.375rem] px-5 relative left-0 right-0 ;
 
 		img {
 			@apply w-12 h-auto align-middle cursor-pointer hidden md:block;
