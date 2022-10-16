@@ -3,6 +3,9 @@
     export let label: string | undefined = undefined
 </script>
 
-<li on:click>
-    <span class={icon}><slot />{label || ""}</span>
+<li class="w-full border-solid py-1 px-2 border-[3px] border-transparent hover:animate-pulseborder cursor-pointer" on:click>
+    <span class={icon} />
+    <span class="px-2 text-sm">
+        {label || ""}
+    </span>
 </li>

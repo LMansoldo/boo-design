@@ -2,9 +2,9 @@
 	export let open: false
 </script>
 
-<div class="flex flex-row items-center shadow-sm shadow-additional-500 justify-center bg-secondary-50 min-h-[4.375rem] drop-shadow-sm px-5 relative left-0 right-0">
+<div>
 	{#if open}
-		<ul>
+		<ul class="flex flex-col shadow-sm shadow-additional-500 justify-center bg-secondary-50 min-h-[4.375rem] drop-shadow-sm py-3 rounded-md relative left-0 right-0 max-w-xs">
 			<slot />
 		</ul>
 	{/if}
