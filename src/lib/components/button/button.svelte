@@ -44,7 +44,7 @@
 <style lang="scss">
 
 	.boo-button {
-		@apply inline-flex justify-center border border-solid border-transparent items-center leading-none px-6 py-1.5 duration-300;
+		@apply inline-flex justify-center border border-solid border-secondary-100 items-center leading-none px-6 py-1.5 duration-300;
 		line-height: 1rem;
 		min-height: 2.5rem;
 		border-width: 2px;
