@@ -1,45 +1,31 @@
 <script lang="ts">
-	import type { NAVIGATION_OPTIONS } from '$lib/types/navigation';
-	import { createEventDispatcher } from 'svelte';
+	import { createEventDispatcher } from 'svelte'
 
-	export let imgSource: string;
-	export let navigationOptions: NAVIGATION_OPTIONS[];
-	export let userControlOptions: NAVIGATION_OPTIONS[];
-	export let activeRoute = undefined as string | undefined;
+	export let imgSource: string
 
-	const dispatch = createEventDispatcher<Events>();
+	const dispatch = createEventDispatcher<Events>()
 	type Events = {
-		redirect: string;
-	};
+		redirect: string
+	}
 
 	function redirectTo(url: string | undefined) {
-		if (url) return dispatch('redirect', url);
+		if (url) return dispatch('redirect', url)
 	}
 </script>
 
 <header class="menubar">
-	<img src={imgSource} alt={imgSource} />
-	<nav>
-		{#each navigationOptions as option}
-			<span
-				class={activeRoute === option.route ? 'active' : ''}
-				on:click={() => redirectTo(option.route)}>{option.label}</span
-			>
-		{/each}
-	</nav>
-	<div>
-		{#each userControlOptions as option}
-			<span on:click={() => redirectTo(option.route)}>{option.label}</span>
-		{/each}
+	<img src={imgSource} alt={imgSource} on:click={() => redirectTo('/')} />
+	<div class="flex justify-between w-full md:justify-end">
+        <slot />
 	</div>
 </header>
 
 <style lang="scss">
 	.menubar {
-		@apply flex flex-row items-center shadow-sm shadow-slate-700/50 justify-center md:justify-between bg-slate-50 min-h-[4.375rem] drop-shadow-sm px-5 relative left-0 right-0;
+		@apply flex flex-row items-center shadow-sm shadow-slate-700/50 justify-center md:justify-between bg-secondary-50 min-h-[4.375rem] drop-shadow-sm px-5 relative left-0 right-0;
 
 		img {
-			@apply max-w-xs w-full max-h-10 block align-middle;
+			@apply w-12 h-auto align-middle cursor-pointer hidden md:block;
 		}
 
 		nav {

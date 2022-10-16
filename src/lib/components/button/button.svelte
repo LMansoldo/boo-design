@@ -50,7 +50,7 @@
 		border-width: 2px;
 
 		&.small {
-			@apply min-h-[2rem] min-w-[3rem] text-xs;
+			@apply min-h-[2rem] min-w-[2rem] text-xs;
 		}
 
 		&.normal {
@@ -66,7 +66,7 @@
 		}
 
 		&.circle {
-			@apply rounded-full min-h-[3rem] min-w-[3rem];
+			@apply rounded-full p-0;
 		}	
 
 		&.disabled,
