@@ -10,22 +10,18 @@
 	<Sidemenu {...args}>
 		<SidemenuItem
 			label="label"
-			icon="icon icon-star star"
 			on:click={() => console.log('a')}
 		/>
 		<SidemenuItem
 			label="label"
-			icon="icon icon-star star"
 			on:click={() => console.log('a')}
 		/>
 		<SidemenuItem
 			label="label"
-			icon="icon icon-star star"
 			on:click={() => console.log('a')}
 		/>
 		<SidemenuItem
 			label="label"
-			icon="icon icon-star star"
 			on:click={() => console.log('a')}
 		/>
 	</Sidemenu>
