@@ -33,6 +33,10 @@ module.exports = {
 					'0%, 100%': { 'border-color': colors.cyan[300] },
 					'50%': { 'border-color': colors.blue[500] },
 				},
+				pulsebackground: {
+					'0%, 100%': { 'background-color': colors.cyan[300] },
+					'50%': { 'background-color': colors.blue[500] },
+				},
 				pulseerror: {
 					'0%, 100%': { 'border-color': colors.red[300] },
 					'50%': { 'border-color': colors.rose[600] },
@@ -40,7 +44,8 @@ module.exports = {
 			},
 			animation: {
 				pulseborder: 'pulseborder 1.5s linear infinite',
-				pulseerror: 'pulseerror 1.6s linear infinite'
+				pulseerror: 'pulseerror 1.6s linear infinite',
+				pulsebackground: 'pulsebackground 1.5s linear infinite'
 			},
 		},
 	},
