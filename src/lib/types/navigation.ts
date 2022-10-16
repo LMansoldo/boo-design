@@ -1,5 +1,6 @@
 export interface NAVIGATION_OPTIONS {
-    label: ""
-    route: ""
-    icon: ""
+    label: string
+    route: string
+    icon: string
+    clickEvent(e: unknown): unknown
 }
