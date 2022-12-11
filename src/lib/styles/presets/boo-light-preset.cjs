@@ -10,6 +10,9 @@ module.exports = {
 			DEFAULT: '1px',
 			1: '1px',
 		},
+		glassGradient: {
+
+		},
 		fontFamily: {
 			'amplitude-regular': ['Amplitude Regular', 'sans-serif'],
 			'amplitude-light': ['Amplitude Light', 'sans-serif'],
@@ -41,11 +44,17 @@ module.exports = {
 					'0%, 100%': { 'border-color': colors.red[300] },
 					'50%': { 'border-color': colors.rose[600] },
 				},
+				brightglass: {
+					'0%': { 'background-position': '6vw' },
+					'100%': { 'background-position': '100vw'  },
+				},
 			},
 			animation: {
 				pulseborder: 'pulseborder 1.5s linear infinite',
 				pulseerror: 'pulseerror 1.6s linear infinite',
-				pulsebackground: 'pulsebackground 1.5s linear infinite'
+				pulsebackground: 'pulsebackground 1.5s linear infinite',
+				brightglass: 'brightglass 1.6s linear infinite',
+				confirmbrightglass: 'brightglass 0.6s linear infinite'
 			},
 		},
 	},

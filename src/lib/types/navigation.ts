@@ -4,3 +4,10 @@ export interface NAVIGATION_OPTIONS {
     icon: string
     clickEvent(e: unknown): unknown
 }
+
+export interface MAIN_NAVIGATION_OPTIONS {
+    path: string
+    title: string
+    icon: string
+    redirect(e: unknown): unknown
+}
